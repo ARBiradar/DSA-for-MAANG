@@ -20,8 +20,6 @@ See the original problem on LeetCode
             if(target == nums[i] + nums[j] )
             {
                 ans[1] = j;
-                return ans;
-            }
 
 ```
 
