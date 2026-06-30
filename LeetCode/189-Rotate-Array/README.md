@@ -9,19 +9,18 @@ See the original problem on LeetCode
 ## 💻 Solution
 
 ```unknown
-        arrayReverse(nums,0,j-1);
-        arrayReverse(nums,0,k-1);
-        k = k%j;
+class Solution {
     public void rotate(int[] nums, int k) {
         int i =0; int j= nums.length;
-class Solution {
+        k = k%j;
+        arrayReverse(nums,0,j-1);
+        arrayReverse(nums,0,k-1);
         arrayReverse(nums,k,nums.length-1);
 
         
     }
-    public void arrayReverse(int[] ans, int i, int j){
-        
-        while(i<j){
+    public void arrayReverse(int[] ans, int 
+    i, int j){
 
 ```
 
