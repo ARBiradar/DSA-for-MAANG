@@ -9,12 +9,8 @@ See the original problem on LeetCode
 ## 💻 Solution
 
 ```unknown
-
-        return secMax;
-
-        }
-    }
-}
+ 
+ 
 
 ```
 
