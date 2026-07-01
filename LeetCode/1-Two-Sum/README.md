@@ -9,6 +9,8 @@ See the original problem on LeetCode
 ## 💻 Solution
 
 ```unknown
+class Solution {
+    public int[] twoSum(int[] nums, int target) {
         int[] ans =  {-1,-1};
        for(int i =0; i< nums.length; i++){
 
@@ -20,14 +22,6 @@ See the original problem on LeetCode
             }
         }
        }
-       return ans;
-    }
-}
-
-    public int[] twoSum(int[] nums, int target) {
-import java.util.HashMap;
-
-class Solution {
 
 ```
 
@@ -37,7 +31,7 @@ class Solution {
 
 ## 📅 Solved On
 
-2026-06-29
+2026-07-01
 
 ---
 *Auto-pushed by [CodePush Extension](https://github.com)*
