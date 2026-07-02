@@ -1,0 +1,13 @@
+class Solution {
+    public boolean isValid(String s) {
+        if(s.length() % 2 == 1)
+            return false;
+        return isValid(0, ' ', s.toCharArray()) >= 0;
+    }
+
+    private int isValid(int i,char last, char[] s){
+        if(i == s.length){
+            return i;
+        }
+        if(i > s.length){
+            return -1;
