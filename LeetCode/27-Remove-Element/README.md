@@ -18,6 +18,10 @@ See the original problem on LeetCode
         
     }
 }
+        for(int i = 0; i< nums.length; i++){
+        int count = 0;
+    public int removeElement(int[] nums, int val) {
+class Solution {
 
 ```
 
