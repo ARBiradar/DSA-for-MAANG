@@ -17,7 +17,6 @@ See the original problem on LeetCode
         }
             currSum = currSum<0?0:currSum;
             maxSum = maxSum<currSum?currSum:maxSum;
-            currSum  += nums[i];
     public int maxSubArray(int[] nums) {
         int max = Integer.MIN_VALUE;
         int sum=0;
@@ -25,6 +24,7 @@ See the original problem on LeetCode
             sum+=nums[i];
             max=max<sum?sum:max;
             sum=sum<0?0:sum;
+        }
 
 ```
 
