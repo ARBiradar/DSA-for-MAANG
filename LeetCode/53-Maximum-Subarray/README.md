@@ -16,7 +16,7 @@ class Solution {
         int maxSum = Integer.MIN_VALUE;
         for(int i= 0; i< nums.length; i++){
             currSum = currSum + nums[i];
-            maxSum = max
+            maxSum = maxSum<currSum?maxSum
             currSum = currSum<0?0:currSum;
         }
         return maxSum;
