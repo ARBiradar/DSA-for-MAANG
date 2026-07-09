@@ -17,7 +17,7 @@ class Solution {
         for(int i= 0; i< nums.length; i++){
             currSum = currSum + nums[i];
             maxSum = Integer.max(currSum,maxSum);
-            currSum = currSum<0?
+            currSum = currSum<0?0:c
         }
         return maxSum;
 
