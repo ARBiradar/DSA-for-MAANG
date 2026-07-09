@@ -9,26 +9,7 @@ See the original problem on LeetCode
 ## 💻 Solution
 
 ```unknown
-                if (j == 0 || j == i) {
-                // First and last elements are always 1
 
-                    row.add(1);
-                }
-                // Middle elements
-                else {
-                    int value = ans.get(i - 1).get(j - 1)
-                              + ans.get(i - 1).get(j);
-                    row.add(value);
-                }
-            }
-
-            ans.add(row);
-        }
-
-   return ans;
-    }
-        
-    
 
 ```
 
