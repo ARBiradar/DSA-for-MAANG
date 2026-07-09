@@ -12,14 +12,6 @@ See the original problem on LeetCode
                 if (j == 0 || j == i) {
                 // First and last elements are always 1
 
-            for (int j = 0; j <= i; j++) {
-
-            List<Integer> row = new ArrayList<>();
-
-        for (int i = 0; i < n; i++) {
-
-         List<List<Integer>> ans = new ArrayList<>();
-         int n = numRows;
                     row.add(1);
                 }
                 // Middle elements
@@ -29,6 +21,14 @@ See the original problem on LeetCode
                     row.add(value);
                 }
             }
+
+            ans.add(row);
+        }
+
+   return ans;
+    }
+        
+    
 
 ```
 
