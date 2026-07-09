@@ -19,12 +19,13 @@ See the original problem on LeetCode
             maxSum = maxSum<currSum?currSum:maxSum;
             currSum  += nums[i];
         for(int i= 0; i< nums.length; i++){
-        int maxSum = Integer.MIN_VALUE;
     public int maxSubArray(int[] nums) {
         int max = Integer.MIN_VALUE;
         int sum=0;
-        int currSum =0;
         for(int i=0;i<nums.length;i++){
+            sum+=nums[i];
+        int maxSum = Integer.MIN_VALUE;
+            max=max<sum?sum:max;
 
 ```
 
