@@ -9,7 +9,20 @@ See the original problem on LeetCode
 ## 💻 Solution
 
 ```unknown
-c
+        
+        int currSum =0;
+        int maxSum = Integer.MIN_VALUE;
+        for(int i= 0; i< nums.length; i++){
+            currSum  += nums[i];
+            maxSum = maxSum<currSum?currSum:maxSum;
+            currSum = currSum<0?0:currSum;
+        }
+        return maxSum;
+
+    }
+
+    /** */
+}
 
 ```
 
