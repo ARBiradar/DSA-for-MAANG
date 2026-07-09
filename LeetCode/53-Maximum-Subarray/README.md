@@ -9,20 +9,22 @@ See the original problem on LeetCode
 ## 💻 Solution
 
 ```unknown
-        
-        int currSum =0;
-        int maxSum = Integer.MIN_VALUE;
-        for(int i= 0; i< nums.length; i++){
-            currSum  += nums[i];
-            maxSum = maxSum<currSum?currSum:maxSum;
-            currSum = currSum<0?0:currSum;
-        }
-        return maxSum;
 
+    /*class Solution {
     }
 
-    /** */
-}
+        return maxSum;
+        }
+            currSum = currSum<0?0:currSum;
+            maxSum = maxSum<currSum?currSum:maxSum;
+            currSum  += nums[i];
+        for(int i= 0; i< nums.length; i++){
+        int maxSum = Integer.MIN_VALUE;
+    public int maxSubArray(int[] nums) {
+        int max = Integer.MIN_VALUE;
+        int sum=0;
+        int currSum =0;
+        for(int i=0;i<nums.length;i++){
 
 ```
 
