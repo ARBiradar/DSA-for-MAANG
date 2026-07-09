@@ -25,6 +25,7 @@ See the original problem on LeetCode
             max=max<sum?sum:max;
             sum=sum<0?0:sum;
         }
+            currSum  += nums[i];
 
 ```
 
