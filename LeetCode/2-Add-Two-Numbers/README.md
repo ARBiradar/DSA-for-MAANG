@@ -9,19 +9,20 @@ See the original problem on LeetCode
 ## 💻 Solution
 
 ```unknown
+            int sum = carry;
             if (l1 != null) {
                 sum += l1.val;
                 l1 = l1.next;
-            int sum = carry;
-
-        while (l1 != null || l2 != null || carry != 0) {
-        int carry = 0;
-        ListNode curr = dummy;
             }
             if (l2 != null) {
                 sum += l2.val;
                 l2 = l2.next;
             }
+
+            carry = sum / 10;
+            curr.next = new ListNode(sum % 10);
+            curr = curr.next;
+        }
 
 ```
 
@@ -31,7 +32,7 @@ See the original problem on LeetCode
 
 ## 📅 Solved On
 
-2026-06-30
+2026-07-11
 
 ---
 *Auto-pushed by [CodePush Extension](https://github.com)*
