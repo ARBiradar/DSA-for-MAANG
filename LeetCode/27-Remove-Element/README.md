@@ -9,6 +9,10 @@ See the original problem on LeetCode
 ## 💻 Solution
 
 ```unknown
+class Solution {
+    public int removeElement(int[] nums, int val) {
+        int count = 0;
+        for(int i = 0; i< nums.length; i++){
             if(nums[i] != val){
                 nums[count] = nums[i];
                 count++;
@@ -18,10 +22,6 @@ See the original problem on LeetCode
         
     }
 }
-        for(int i = 0; i< nums.length; i++){
-        int count = 0;
-    public int removeElement(int[] nums, int val) {
-class Solution {
 
 ```
 
@@ -31,7 +31,7 @@ class Solution {
 
 ## 📅 Solved On
 
-2026-07-06
+2026-07-11
 
 ---
 *Auto-pushed by [CodePush Extension](https://github.com)*
