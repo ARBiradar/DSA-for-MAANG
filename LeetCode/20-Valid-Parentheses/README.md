@@ -9,19 +9,20 @@ See the original problem on LeetCode
 ## 💻 Solution
 
 ```unknown
-class Solution {
-    public boolean isValid(String s) {
-        if(s.length() % 2 == 1)
-            return false;
-        return isValid(0, ' ', s.toCharArray()) >= 0;
-    }
-
-    private int isValid(int i,char last, char[] s){
-        if(i == s.length){
-            return i;
         }
         if(i > s.length){
             return -1;
+        }
+
+        if(s[i] == '(' || s[i] == '{' || s[i] == '['){
+            int next = isValid(i + 1, s[i], s);
+            return next < 0 ? -1 : isValid(next + 1, last, s);
+        }
+
+        if(s[i] == ')' && last == '(' || s[i] == ']' && last == '[' ||s[i] 
+        == '}' && last == '{'){
+            return i;
+        }
 
 ```
 
@@ -31,7 +32,7 @@ class Solution {
 
 ## 📅 Solved On
 
-2026-07-05
+2026-07-11
 
 ---
 *Auto-pushed by [CodePush Extension](https://github.com)*
