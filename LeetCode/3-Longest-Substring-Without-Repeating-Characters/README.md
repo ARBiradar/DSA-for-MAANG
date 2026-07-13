@@ -9,6 +9,10 @@ See the original problem on LeetCode
 ## 💻 Solution
 
 ```unknown
+        // Array to store the last seen index of each character.
+        // 128 covers all standard ASCII characters (letters, numbers, 
+        symbols).
+        int[] lastSeen = new int[128];
         
         // Initialize the array with -1 to indicate the character hasn't 
         been seen yet
@@ -20,9 +24,6 @@ See the original problem on LeetCode
         
         for (int right = 0; right < n; right++) {
             char currentChar = s.charAt(right);
-            
-            // If we've seen this character before AND it falls inside our 
-            current window...
 
 ```
 
@@ -32,7 +33,7 @@ See the original problem on LeetCode
 
 ## 📅 Solved On
 
-2026-07-11
+2026-07-13
 
 ---
 *Auto-pushed by [CodePush Extension](https://github.com)*
