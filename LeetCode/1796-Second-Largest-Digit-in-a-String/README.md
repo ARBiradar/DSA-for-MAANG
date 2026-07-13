@@ -9,8 +9,19 @@ See the original problem on LeetCode
 ## 💻 Solution
 
 ```unknown
- 
- 
+class Solution {
+    public int secondHighest(String s) {
+      int max = -1;
+        int secMax = -1;
+
+        for (char c : s.toCharArray()) {
+            if (Character.isDigit(c)) {
+                int num = c - '0'; // convert char digit to int
+                if (num > max) {
+                    secMax = max;
+                    max = num;
+                } else if (num < max && num > secMax) {
+                    secMax = num;
 
 ```
 
@@ -20,7 +31,7 @@ See the original problem on LeetCode
 
 ## 📅 Solved On
 
-2026-06-30
+2026-07-13
 
 ---
 *Auto-pushed by [CodePush Extension](https://github.com)*
