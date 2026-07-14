@@ -9,20 +9,19 @@ See the original problem on LeetCode
 ## 💻 Solution
 
 ```unknown
-            if (lastSeen[currentChar] >= left) {
-                // Shrink the window by jumping 'left' right past the old 
-                occurrence
-                left = lastSeen[currentChar] + 1;
-            }
-            
-            // Update/Record the character's newest position
-            lastSeen[currentChar] = right;
-            
-            // Calculate current window size and track the maximum
-            maxLength = Math.max(maxLength, right - left + 1);
-        }
+class Solution {
+    public int lengthOfLongestSubstring(String s) {
+
+    int n = s.length();
+        int maxLength = 0;
         
-        return maxLength;
+        // Array to store the last seen index of each character.
+        // 128 covers all standard ASCII characters (letters, numbers, 
+        symbols).
+        int[] lastSeen = new int[128];
+        
+        // Initialize the array with -1 to indicate the character hasn't 
+        been seen yet
 
 ```
 
@@ -32,7 +31,7 @@ See the original problem on LeetCode
 
 ## 📅 Solved On
 
-2026-07-13
+2026-07-14
 
 ---
 *Auto-pushed by [CodePush Extension](https://github.com)*
