@@ -9,20 +9,7 @@ See the original problem on LeetCode
 ## 💻 Solution
 
 ```unknown
-        int buyingPrice = Integer.MAX_VALUE;
-        int maxProfit = 0;
-        for(int i = 0; i< prices.length; i++){
-            int sellingPrice = prices[i];
-            if(sellingPrice > buyingPrice ){
-                int profit = sellingPrice - buyingPrice;
-            }
-                maxProfit = Math.max(maxProfit , profit);
-            else{
-                buyingPrice = sellingPrice;
-            }
-    public int maxProfit(int[] prices) {
-        }
-        return maxProfit;
+ 
 
 ```
 
