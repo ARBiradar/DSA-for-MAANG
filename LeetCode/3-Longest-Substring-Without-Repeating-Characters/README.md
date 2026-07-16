@@ -9,19 +9,15 @@ See the original problem on LeetCode
 ## 💻 Solution
 
 ```unknown
-class Solution {
-    public int lengthOfLongestSubstring(String s) {
-
-    int n = s.length();
-        int maxLength = 0;
+            lastSeen[currentChar] = right;
+            
+            // Calculate current window size and track the maximum
+            maxLength = Math.max(maxLength, right - left + 1);
+        }
         
-        // Array to store the last seen index of each character.
-        // 128 covers all standard ASCII characters (letters, numbers, 
-        symbols).
-        int[] lastSeen = new int[128];
-        
-        // Initialize the array with -1 to indicate the character hasn't 
-        been seen yet
+        return maxLength;
+    }
+}
 
 ```
 
@@ -31,7 +27,7 @@ class Solution {
 
 ## 📅 Solved On
 
-2026-07-14
+2026-07-16
 
 ---
 *Auto-pushed by [CodePush Extension](https://github.com)*
