@@ -1,15 +1,10 @@
-    class Solution {
-*/
-    }
-
-        return maxSum;
+            sum+=nums[i];
+            max=max<sum?sum:max;
+            sum=sum<0?0:sum;
         }
-            currSum = currSum<0?0:currSum;
-            maxSum = maxSum<currSum?currSum:maxSum;
-        int maxSum = Integer.MIN_VALUE;
-        for(int i= 0; i< nums.length; i++){
-            currSum  += nums[i];
-        
-        int currSum =0;
-/*class Solution {
-    public int maxSubArray(int[] nums) {
+
+        return max;
+    }
+} 
+//}
+        for(int i=0;i<nums.length;i++){
