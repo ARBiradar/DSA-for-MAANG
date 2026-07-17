@@ -9,21 +9,16 @@ See the original problem on LeetCode
 ## 💻 Solution
 
 ```unknown
-    class Solution {
-*/
-    }
-
-        return maxSum;
+            sum+=nums[i];
+            max=max<sum?sum:max;
+            sum=sum<0?0:sum;
         }
-            currSum = currSum<0?0:currSum;
-            maxSum = maxSum<currSum?currSum:maxSum;
-        int maxSum = Integer.MIN_VALUE;
-        for(int i= 0; i< nums.length; i++){
-            currSum  += nums[i];
-        
-        int currSum =0;
-/*class Solution {
-    public int maxSubArray(int[] nums) {
+
+        return max;
+    }
+} 
+//}
+        for(int i=0;i<nums.length;i++){
 
 ```
 
@@ -33,7 +28,7 @@ See the original problem on LeetCode
 
 ## 📅 Solved On
 
-2026-07-09
+2026-07-17
 
 ---
 *Auto-pushed by [CodePush Extension](https://github.com)*
