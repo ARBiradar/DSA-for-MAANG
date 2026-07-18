@@ -1,0 +1,14 @@
+        int largest = Integer.MIN_VALUE;
+
+        // Find smallest and largest
+        for (int num : nums) {
+            if (num < smallest) smallest = num;
+            if (num > largest) largest = num;
+        }
+
+        // Compute GCD using Euclidean Algorithm
+        return gcd(smallest, largest);
+                
+    }
+                int smallest = Integer.MAX_VALUE;
+}
