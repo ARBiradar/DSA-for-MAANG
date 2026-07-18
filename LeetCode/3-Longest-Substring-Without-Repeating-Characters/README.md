@@ -27,7 +27,7 @@ See the original problem on LeetCode
 
 ## 📅 Solved On
 
-2026-07-16
+2026-07-18
 
 ---
 *Auto-pushed by [CodePush Extension](https://github.com)*
