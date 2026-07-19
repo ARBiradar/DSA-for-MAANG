@@ -31,7 +31,7 @@ class Solution {
 
 ## 📅 Solved On
 
-2026-07-14
+2026-07-19
 
 ---
 *Auto-pushed by [CodePush Extension](https://github.com)*
