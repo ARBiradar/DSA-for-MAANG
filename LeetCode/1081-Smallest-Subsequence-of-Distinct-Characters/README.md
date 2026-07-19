@@ -9,20 +9,7 @@ See the original problem on LeetCode
 ## 💻 Solution
 
 ```unknown
-                   freq[stack.charAt(stack.length() - 1) - 'a'] > 0) {
-                visited[stack.charAt(stack.length() - 1) - 'a'] = false;
-                stack.deleteCharAt(stack.length() - 1);
-            }
-
-            stack.append(c);
-            while (stack.length() > 0 &&
-                   stack.charAt(stack.length() - 1) > c &&
-            // maintain lexicographic order
-
-            if (visited[c - 'a']) continue; // already in stack
-
-            freq[c - 'a']--; // one occurrence used
-        for (char c : s.toCharArray()) {
+ 
 
 ```
 
