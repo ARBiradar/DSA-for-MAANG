@@ -1,9 +1,1 @@
-                row.add(shifted[idx++]);
-            }
-            result.add(row);
-        }
-
-        return result;
-    }
-}
-
+ 
