@@ -9,15 +9,7 @@ See the original problem on LeetCode
 ## 💻 Solution
 
 ```unknown
-                row.add(shifted[idx++]);
-            }
-            result.add(row);
-        }
-
-        return result;
-    }
-}
-
+ 
 
 ```
 
