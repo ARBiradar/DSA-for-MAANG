@@ -1,14 +1,1 @@
-    for (int[] query : queries) {
-      final int l = query[0];
-      final int r = query[1];
-      final int left = zeroGroupIndex[l] == -1 ? -1
-                                               : (zeroGroups.get
-                                               (zeroGroupIndex[l]).
-                                               length -
-                                                  (l - zeroGroups.get
-                                                  (zeroGroupIndex[l]).
-                                                  start));
-      final int right =
-          zeroGroupIndex[r] == -1 ? -1 : (r - zeroGroups.get
-          (zeroGroupIndex[r]).start + 1);
-      final Pair<Integer, Integer> adjacentIndices = 
+ 
