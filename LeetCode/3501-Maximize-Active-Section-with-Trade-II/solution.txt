@@ -1,0 +1,14 @@
+
+    final SparseTable st = new SparseTable(getZeroMergeLengths
+      return Collections.nCopies(queries.length, ones);
+    if (zeroGroups.isEmpty())
+    final int[] zeroGroupIndex = zeroGroupsInfo.getValue();
+
+class Solution {
+  public List<Integer> maxActiveSectionsAfterTrade(String s, int[][] 
+  queries) {
+    final int n = s.length();
+    final int ones = (int) s.chars().filter(c -> c == '1').count();
+    final Pair<List<Group>, int[]> zeroGroupsInfo = getZeroGroups(s);
+    final List<Group> zeroGroups = zeroGroupsInfo.getKey();
+
