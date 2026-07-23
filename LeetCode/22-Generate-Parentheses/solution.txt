@@ -5,8 +5,8 @@ class Solution {
         return result;
     }
 
-    private void backtrack(List<String> result, String current, int open, 
-    int close, int max) {
+    private void backtrack(List<String> result, String current, int 
+    open, int close, int max) {
         if (current.length() == max * 2) {
             result.add(current);
             return;
