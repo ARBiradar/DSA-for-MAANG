@@ -9,20 +9,19 @@ See the original problem on LeetCode
 ## 💻 Solution
 
 ```unknown
-            int sum = carry;
-            if (l1 != null) {
-                sum += l1.val;
-                l1 = l1.next;
-            }
-            if (l2 != null) {
-                sum += l2.val;
-                l2 = l2.next;
-            }
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode() {}
+ *     ListNode(int val) { this.val = val; }
+ *     ListNode(int val, ListNode next) { this.val = val; this.next = 
+ next; }
+ * }
+ */
 
-            carry = sum / 10;
-            curr.next = new ListNode(sum % 10);
-            curr = curr.next;
-        }
+class Solution {
 
 ```
 
@@ -32,7 +31,7 @@ See the original problem on LeetCode
 
 ## 📅 Solved On
 
-2026-07-11
+2026-07-23
 
 ---
 *Auto-pushed by [CodePush Extension](https://github.com)*
