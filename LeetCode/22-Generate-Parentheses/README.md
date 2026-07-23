@@ -16,8 +16,8 @@ class Solution {
         return result;
     }
 
-    private void backtrack(List<String> result, String current, int open, 
-    int close, int max) {
+    private void backtrack(List<String> result, String current, int 
+    open, int close, int max) {
         if (current.length() == max * 2) {
             result.add(current);
             return;
@@ -31,7 +31,7 @@ class Solution {
 
 ## 📅 Solved On
 
-2026-07-12
+2026-07-23
 
 ---
 *Auto-pushed by [CodePush Extension](https://github.com)*
