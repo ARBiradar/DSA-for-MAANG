@@ -9,21 +9,21 @@ See the original problem on LeetCode
 ## 💻 Solution
 
 ```unknown
-        mx = 4096
-        st = [False] * mx
-        
-        for a in nums:
-            for b in nums:
-                st[a ^ b] = True
-                
-        s = [0] * mx
-        for ab in range(mx):
-            if st[ab]:
-                for c in nums:
-                    s[ab ^ c] = 1
-                    
-        return sum(s)
 
+        k = 1 << max(V).bit_length()
+
+        while V:
+            v = V.pop()                         # pop :: prevents reuse below
+
+            X3 |= {v ^ x2 for x2 in X2}         # existing pair ^ current 
+            X2 |= {v ^ vv for vv in V}          # any value ^ current value => 
+            
+            if len(X3) == k: break
+        
+        return len(X3)
+
+            value => triplet
+            pair
 
 ```
 
