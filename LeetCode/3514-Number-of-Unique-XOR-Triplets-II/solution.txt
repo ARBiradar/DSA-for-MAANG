@@ -1,4 +1,3 @@
-    def uniqueXorTriplets(self, nums: List[int]) -> int:
         mx = 4096
         st = [False] * mx
         
@@ -11,6 +10,6 @@
             if st[ab]:
                 for c in nums:
                     s[ab ^ c] = 1
-class Solution:
-from typing import List
+                    
+        return sum(s)
 
