@@ -9,7 +9,6 @@ See the original problem on LeetCode
 ## 💻 Solution
 
 ```unknown
-    def uniqueXorTriplets(self, nums: List[int]) -> int:
         mx = 4096
         st = [False] * mx
         
@@ -22,8 +21,8 @@ See the original problem on LeetCode
             if st[ab]:
                 for c in nums:
                     s[ab ^ c] = 1
-class Solution:
-from typing import List
+                    
+        return sum(s)
 
 
 ```
