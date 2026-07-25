@@ -9,7 +9,14 @@ See the original problem on LeetCode
 ## 💻 Solution
 
 ```unknown
- 
+class Solution { public String smallestSubsequence(String text) { StringBuilder 
+sb = new StringBuilder(); int[] count = new int[128]; boolean[] used = new 
+boolean[128]; for (final char c : text.toCharArray()) ++count[c]; for (final 
+char c : text.toCharArray()) { --count[c]; if (used[c]) continue; while (sb.
+length() > 0 && last(sb) > c && count[last(sb)] > 0) { used[last(sb)] = false; 
+sb.setLength(sb.length() - 1); } used[c] = true; sb.append(c); } return sb.
+toString(); } private char last(StringBuilder sb) { return sb.charAt(sb.length
+() - 1); } }
 
 ```
 
@@ -19,7 +26,7 @@ See the original problem on LeetCode
 
 ## 📅 Solved On
 
-2026-07-19
+2026-07-25
 
 ---
 *Auto-pushed by [CodePush Extension](https://github.com)*
