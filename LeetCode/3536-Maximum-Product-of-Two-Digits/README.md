@@ -9,17 +9,19 @@ See the original problem on LeetCode
 ## 💻 Solution
 
 ```unknown
+                secMax = max;
+            if (digit > max) {
+            freq[digit]++;
+            int digit = temp % 10;
+        while (temp != 0) {
+        int temp = n;
         
-        // If max digit appears at least twice, product is max*max
-        if (freq[max] >= 2) {
-            return max * max;
-        }
+        int secMax = Integer.MIN_VALUE;
+        int[] freq = new int[10]; // frequency of digits
         
-        // Otherwise product of max and second max
-        return max * secMax;
-    }
-}
-
+        int max = Integer.MIN_VALUE;
+class Solution {
+    public int maxProduct(int n) {
 
 ```
 
