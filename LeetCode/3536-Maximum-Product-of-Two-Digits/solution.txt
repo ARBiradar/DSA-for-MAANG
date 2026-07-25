@@ -1,0 +1,11 @@
+        
+        // If max digit appears at least twice, product is max*max
+        if (freq[max] >= 2) {
+            return max * max;
+        }
+        
+        // Otherwise product of max and second max
+        return max * secMax;
+    }
+}
+
