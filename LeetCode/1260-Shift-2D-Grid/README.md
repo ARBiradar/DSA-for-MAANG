@@ -9,20 +9,15 @@ See the original problem on LeetCode
 ## 💻 Solution
 
 ```unknown
-        }
-
-        // Build result back into 2D list
-        List<List<Integer>> result = new ArrayList<>();
-        idx = 0;
-        for (int i = 0; i < m; i++) {
-            List<Integer> row = new ArrayList<>();
-            for (int j = 0; j < n; j++) {
                 row.add(shifted[idx++]);
             }
             result.add(row);
         }
 
         return result;
+    }
+}
+
 
 ```
 
@@ -32,7 +27,7 @@ See the original problem on LeetCode
 
 ## 📅 Solved On
 
-2026-07-22
+2026-07-26
 
 ---
 *Auto-pushed by [CodePush Extension](https://github.com)*
