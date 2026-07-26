@@ -9,7 +9,20 @@ See the original problem on LeetCode
 ## 💻 Solution
 
 ```unknown
- 
+                                  ones + st.query(startAdjacentGroupIndex, 
+                                  endAdjacentGroupIndex));
+      if (s.charAt(l) == '0' &&
+          zeroGroupIndex[l] + 1 <= (s.charAt(r) == '1' ? zeroGroupIndex[r] : 
+          zeroGroupIndex[r] - 1))
+        activeSections =
+            Math.max(activeSections, ones + left + zeroGroups.get
+            (zeroGroupIndex[l] + 1).length);
+      if (s.charAt(r) == '0' && zeroGroupIndex[l] < zeroGroupIndex[r] - 1)
+        activeSections =
+            Math.max(activeSections, ones + right + zeroGroups.get
+            (zeroGroupIndex[r] - 1).length);
+      ans.add(activeSections);
+    }
 
 ```
 
@@ -19,7 +32,7 @@ See the original problem on LeetCode
 
 ## 📅 Solved On
 
-2026-07-22
+2026-07-26
 
 ---
 *Auto-pushed by [CodePush Extension](https://github.com)*
