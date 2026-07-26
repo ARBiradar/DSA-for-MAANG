@@ -1,1 +1,14 @@
- 
+                                  ones + st.query(startAdjacentGroupIndex, 
+                                  endAdjacentGroupIndex));
+      if (s.charAt(l) == '0' &&
+          zeroGroupIndex[l] + 1 <= (s.charAt(r) == '1' ? zeroGroupIndex[r] : 
+          zeroGroupIndex[r] - 1))
+        activeSections =
+            Math.max(activeSections, ones + left + zeroGroups.get
+            (zeroGroupIndex[l] + 1).length);
+      if (s.charAt(r) == '0' && zeroGroupIndex[l] < zeroGroupIndex[r] - 1)
+        activeSections =
+            Math.max(activeSections, ones + right + zeroGroups.get
+            (zeroGroupIndex[r] - 1).length);
+      ans.add(activeSections);
+    }
