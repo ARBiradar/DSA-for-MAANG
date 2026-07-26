@@ -16,12 +16,12 @@ See the original problem on LeetCode
  *     ListNode next;
  *     ListNode() {}
  *     ListNode(int val) { this.val = val; }
- *     ListNode(int val, ListNode next) { this.val = val; this.next = 
- next; }
+ *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
  */
 
 class Solution {
+    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
 
 ```
 
@@ -31,7 +31,7 @@ class Solution {
 
 ## 📅 Solved On
 
-2026-07-23
+2026-07-26
 
 ---
 *Auto-pushed by [CodePush Extension](https://github.com)*
