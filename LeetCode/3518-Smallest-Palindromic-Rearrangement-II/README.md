@@ -9,15 +9,7 @@ See the original problem on LeetCode
 ## 💻 Solution
 
 ```unknown
-    return res
-
-  def _nCk(self, n: int, k: int) -> int:
-    res = 1
-    for i in range(1, min(k, n - k) + 1):
-      res = res * (n - i + 1) // i
-      if res >= self.MAX:
-        return self.MAX
-    return res
+ 
 
 ```
 
