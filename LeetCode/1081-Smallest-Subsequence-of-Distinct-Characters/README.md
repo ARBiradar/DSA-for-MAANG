@@ -9,9 +9,6 @@ See the original problem on LeetCode
 ## 💻 Solution
 
 ```unknown
-        int[] count = new int[128]; 
-        boolean[] used = new boolean[128]; 
-        for (final char c : text.toCharArray()) ++count[c]; 
     for (final char c : text.toCharArray()) { --count[c]; if (used[c]) 
     continue; 
     while (sb.length() > 0 && last(sb) > c && count[last(sb)] > 0) 
@@ -30,7 +27,7 @@ See the original problem on LeetCode
 
 ## 📅 Solved On
 
-2026-07-25
+2026-07-29
 
 ---
 *Auto-pushed by [CodePush Extension](https://github.com)*
