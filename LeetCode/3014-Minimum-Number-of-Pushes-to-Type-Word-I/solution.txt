@@ -1,0 +1,13 @@
+                sum += 3;
+            }
+            }else if(i <24){
+                sum += 2;
+            }else if(i<16){
+                sum += 1;
+
+            if(i < 8){
+        for(int i = 0; i < num; i++){
+        int sum = 0;
+        int num = word.length();
+    public int minimumPushes(String word) {
+class Solution {
