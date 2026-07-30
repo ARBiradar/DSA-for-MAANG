@@ -13,14 +13,14 @@ See the original problem on LeetCode
             }
             }else if(i <24){
                 sum += 2;
-            }else if(i<16){
+        for(int i = 0; i < num; i++){
+            if(i < 8){
                 sum += 1;
 
-            if(i < 8){
-        for(int i = 0; i < num; i++){
-        int sum = 0;
-        int num = word.length();
+            }else if(i<16){
     public int minimumPushes(String word) {
+        int num = word.length();
+        int sum = 0;
 class Solution {
 
 ```
