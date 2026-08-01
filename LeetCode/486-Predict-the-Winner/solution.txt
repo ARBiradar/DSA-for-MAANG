@@ -1,0 +1,13 @@
+    // Memoization table to store calculated results for subproblems
+    // dp[i][j] represents the maximum score difference the current player can achieve
+    // when choosing from nums[i] to nums[j]
+    private int[][] dp;
+
+    /**
+     * Determines if Player 1 can win or tie the game
+     * @param nums Array of scores to choose from
+     * @return true if Player 1 can win or tie, false otherwise
+     */
+    private int[] nums;
+    // Store the input array globally for DFS access
+class Solution {
